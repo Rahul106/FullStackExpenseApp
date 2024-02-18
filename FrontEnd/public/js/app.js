@@ -31,7 +31,7 @@ newExpenseBtn.addEventListener('click', () => {
     submitBtn.innerText = 'Submit'
     modalTitle.innerText = 'Fill The Expense-Form ...'
     isEdit = false
-    imgInput.src = '.././public/images/Profile Icon.webp'
+    imgInput.src = '/images/Profile Icon.webp'
 });
 
 
@@ -49,7 +49,6 @@ imgFile.onchange = function() {
         alert('This file is too large!')
     }
 }
-
 
 
 function showExpenseInfo() {
@@ -117,7 +116,7 @@ form.addEventListener('submit', (e)=> {
     e.preventDefault()
 
     const expenseInfo = {
-        ePic: imgInput.src == undefined ? '.././public/images/Profile Icon.webp' : imgInput.src,
+        ePic: imgInput.src == undefined ? '/images/Profile Icon.webp' : imgInput.src,
         eNum: expNum.value,
         eName: expName.value,
         eAmt: expAmt.value,
@@ -139,7 +138,7 @@ form.addEventListener('submit', (e)=> {
     showExpenseInfo();
     document.getElementById("i_expPaperWorkForm").reset(); 
    
-    imgInput.src = '.././public/images/Profile Icon.webp';  
+    imgInput.src = '/images/Profile Icon.webp';  
 
     // modal.style.display = 'none'
     // document.querySelector('.modal-backdrop').remove()
