@@ -1,0 +1,18 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "FullExpense Tracker is a dynamic web app utilizing HTML, CSS, JavaScript, Bootstrap, Node.js, Express.js, Sequelize, and async/await for efficient expense tracking with MVC architecture.",
+  "main": "app_executor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app_executor.js",
+    "start-server": "node app_executor.js"
+  },
+  "author": "Rahul Rajkumar Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "mysql2": "^3.9.1",
+    "sequelize": "^6.37.1"
+  }
+}
