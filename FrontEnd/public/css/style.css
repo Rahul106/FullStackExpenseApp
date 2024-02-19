@@ -1,16 +1,16 @@
-table tr td{
+table tr td {
     vertical-align: middle;
 }
 
-td button{
+td button {
     margin: 5px;
 }
 
-td button i{
+td button i {
     font-size: 20px;
 }
 
-.modal-header{
+.modal-header {
     background: #0d6efd;
     color: #fff;
 }
@@ -22,7 +22,7 @@ td button i{
     padding: 0;
 }
 
-.modal-body form .imgholder{
+.modal-body form .imgholder {
     width: 200px;
     height: 200px;
     position: relative;
@@ -30,39 +30,39 @@ td button i{
     overflow: hidden;
 }
 
-.imgholder .upload{
+.imgholder .upload {
     position: absolute;
     bottom: 0;
     left: 10;
     width: 100%;
     height: 100px;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     display: none;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
 
-.upload i{
+.upload i {
     color: #fff;
     font-size: 35px;
 }
 
-.imgholder:hover .upload{
+.imgholder:hover .upload {
     display: flex;
 }
 
-.imgholder .upload input{
+.imgholder .upload input {
     display: none;
 }
 
-.modal-body form .input_Fields{
+.modal-body form .input_Fields {
     flex-basis: 68%;
     border-left: 5px groove blue;
     padding-left: 20px;
 }
 
-form .input_Fields div{
+form .input_Fields div {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -70,17 +70,17 @@ form .input_Fields div{
     margin-bottom: 20px;
 }
 
-form .input_Fields div label{
+form .input_Fields div label {
     font-size: 20px;
     font-weight: 500;
 }
 
-#addExpenseForm form .input_Fields  div label::after{
+#addExpenseForm form .input_Fields div label::after {
     content: "*";
     color: red;
 }
 
-form .input_Fields div input{
+form .input_Fields div input {
     width: 60%;
     padding: 10px;
     border: none;
@@ -89,26 +89,59 @@ form .input_Fields div input{
     border-bottom: 2px solid blue;
 }
 
-.modal-footer .submit{
+.modal-footer .submit {
     font-size: 18px;
 }
 
 
-#readData form .input_Fields  div input{
+#readData form .input_Fields div input {
     color: #000;
     font-size: 18px;
 }
+
+/* Add custom styling for the input field */
+#totalPrice {
+    width: 400px;
+    /* Adjust the width as needed */
+    padding: 8px;
+    /* Add padding for better appearance */
+    border: 2px solid #ccc;
+    /* Add border */
+    border-radius: 5px;
+    /* Add border radius for rounded corners */
+    color: #333;
+    /* Text color */
+    font-size: 16px;
+    /* Font size */
+}
+
+/* Add placeholder styling */
+#totalPrice::placeholder {
+    color: #999;
+    /* Placeholder text color */
+}
+
+/* Add custom styling when the input field is in readonly mode */
+#totalPrice[readonly] {
+    background-color: #f0f0f0;
+    /* Background color for readonly input */
+    cursor: not-allowed;
+    /* Change cursor style to not-allowed */
+}
+
+
 @media screen and (max-width: 950px) {
     table thead tr {
-        display: none;    
+        display: none;
     }
+
     table td {
         text-align: right;
         display: block;
         font-size: 20 px;
         font-weight: 500;
     }
-    
+
     table td::before {
         content: attr(data-title) ": ";
         float: left;
@@ -117,22 +150,23 @@ form .input_Fields div input{
 
 @media screen and (max-width: 950px) {
     table thead tr {
-        display: none;    
+        display: none;
     }
+
     table td {
         text-align: right;
         display: block;
         font-size: 20 px;
         font-weight: 500;
     }
-    
+
     table td::before {
         content: attr(data-title) ": ";
         float: left;
     }
 }
 
-@media screen and (max-width: 770px){
+@media screen and (max-width: 770px) {
 
     .modal-body form .box {
         border: 1px solid black;
@@ -148,13 +182,13 @@ form .input_Fields div input{
         height: 100px;
     }
 
-    .modal-body form .input_Fields{
+    .modal-body form .input_Fields {
         margin: 10px 0px 0px 0px;
         border: none;
         border-top: 2px solid blue;
     }
 
-    .modal-body form .input_Fields .display{
+    .modal-body form .input_Fields .display {
         font-size: 20px;
         font-weight: 500;
     }
@@ -168,8 +202,8 @@ form .input_Fields div input{
 
 }
 
-@media screen and (max-width: 768px){
-    .modal-body form .imgholder{
+@media screen and (max-width: 768px) {
+    .modal-body form .imgholder {
         border: 1px solid black;
         display: flex;
         justify-content: center;
@@ -177,30 +211,38 @@ form .input_Fields div input{
         width: 100px;
         height: 100px;
     }
-    .imgholder .resi{
+
+    .imgholder .resi {
         width: 100px;
         height: 100px;
     }
-    .imgholder .upload{
+
+    .imgholder .upload {
         width: 100px;
         height: 100px;
     }
-    .modal-body form .input_Fields{
+
+    .modal-body form .input_Fields {
         margin: 10px 0px 0px 0px;
         border: none;
         border-top: 2px solid blue;
     }
-    .modal-body form .input_Fields .lbl{
+
+    .modal-body form .input_Fields .lbl {
         font-size: 20px;
         font-weight: 500;
     }
-    .modal-body .formbox{
+
+    .modal-body .formbox {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
-    #clsBtn, #subBtn { 
-        width: 100%; 
+
+    #clsBtn,
+    #subBtn {
+        width: 100%;
     }
+
 }
